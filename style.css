@@ -1,0 +1,139 @@
+
+  .cara {
+      border: 2px solid black;
+      padding: 30px;
+      border-radius: 25px;
+      width: 900px;
+      height: 300px;
+      position: relative;
+      transition: all 0, 4s;
+      overflow: hidden;
+  }
+
+  .circle {
+      position: absolute;
+      right: -30px;
+      bottom: -30px;
+      border-radius: 80px;
+      z-index: -1;
+  }
+
+  .circle1 {
+      left: -33px;
+      top: -33px;
+      width: 120px;
+      height: 120px;
+      background-color: rgb(248, 96, 69);
+      transition: all 0.4s;
+  }
+
+  .circle2 {
+      right: -30px;
+      bottom: -30px;
+      width: 200px;
+      height: 200px;
+      background-color: rgb(31, 195, 31);
+      transition: all 0.4s;
+  }
+
+  .cara:hover .circle1 {
+      left: 290px;
+      top: 20px;
+  }
+
+  .cara:hover .circle2 {
+      right: 200px;
+      bottom: 80px;
+  }
+
+  .circle3 {
+      right: -30px;
+      top: -30px;
+      width: 120px;
+      height: 130px;
+      background-color: rgb(31, 138, 195);
+      transition: all 0.4s;
+  }
+
+  .cara:hover .circle3 {
+      right: 210px;
+      top: 30px;
+  }
+
+  .circle4 {
+      left: -30px;
+      bottom: -30px;
+      width: 150px;
+      height: 150px;
+      background-color: rgb(248, 69, 173);
+      transition: all 0.4s;
+  }
+
+  .cara:hover .circle4 {
+      left: 250px;
+      bottom: 100px;
+  }
+
+.container{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: none;
+   gap: 20px;
+   
+}
+
+body{
+
+    background-image: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+}
+.owl-carousel>div{
+border: 1px;
+border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+  /* div{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    position: relative;
+    transition: all 0,4s;
+    overflow: hidden;
+    background-color: rgb(82, 82, 255);
+    z-index: 1;
+}
+div h1{
+    color: aliceblue;
+}
+
+   
+.circle{
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    border-radius: 80px;
+    z-index: -1;
+}
+.circle1{
+    left: -30px;
+    
+    width: 50px;
+    height: 50px;
+    background-color: rgb(248, 96, 69);
+    transition: all  0.4s;
+}
+.div:hover .circle1{
+    left: 30px;
+    top: 30px;
+z-index: -1;
+} */
